@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f7f5ed">
+  <title>Kunlik Virdlarim</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="moon">☾</div>
+      <div><p class="eyebrow">BUGUNGI IBODAT REJAM</p><h1>Kunlik Virdlarim</h1><p id="welcome">Assalomu alaykum!</p></div>
+    </header>
+
+    <section class="date-card">
+      <div><span class="muted">Bugungi sana</span><strong id="today"></strong></div>
+      <div class="progress-wrap"><div class="progress-label"><span>Bajarilgan</span><b id="progressText">0%</b></div><div class="track"><div id="progressBar"></div></div></div>
+    </section>
+
+    <main>
+      <h2>Kunlik vazifalar</h2>
+      <div class="grid">
+        <article class="task" data-key="istigfor"><div class="icon">🤲</div><h3>Istig‘for</h3><p>Astaghfirulloh</p><div class="counter"><button data-step="-1">−</button><b>0</b><button data-step="1">+</button></div><small>Marta</small></article>
+        <article class="task" data-key="salovat"><div class="icon">ﷺ</div><h3>Salovat</h3><p>Salovatlar</p><div class="counter"><button data-step="-1">−</button><b>0</b><button data-step="1">+</button></div><small>Marta</small></article>
+        <article class="task" data-key="quran"><div class="icon">📖</div><h3>Qur’on</h3><p>Tilovat</p><div class="counter"><button data-step="-1">−</button><b>0</b><button data-step="1">+</button></div><small>Sahifa</small></article>
+        <article class="task" data-key="asma"><div class="icon">✨</div><h3>Asmaul Husna</h3><p>Allohning go‘zal ismlari</p><div class="counter"><button data-step="-1">−</button><b>0</b><button data-step="1">+</button></div><small>Ism</small></article>
+        <article class="task" data-key="namoz"><div class="icon">🕌</div><h3>Namozlar</h3><p>Besh mahal namoz</p><label class="check"><input type="checkbox"> Bajarildi</label></article>
+        <article class="task" data-key="tahajjud"><div class="icon">🌙</div><h3>Tahajjud</h3><p>Tungi ibodat</p><label class="check"><input type="checkbox"> Bajarildi</label></article>
+        <article class="task" data-key="kitob"><div class="icon">📚</div><h3>Kitob o‘qish</h3><p>Foydali mutolaa</p><div class="counter"><button data-step="-1">−</button><b>0</b><button data-step="1">+</button></div><small>Daqiqa</small></article>
+      </div>
+      <section class="note"><span>🌿</span><p>Oz bo‘lsa ham, davomli amal eng go‘zal amallardandir.</p></section>
+    </main>
+    <nav><button class="active">⌂<small>Bosh sahifa</small></button><button id="sections">☷<small>Bo‘limlar</small></button><button id="report">▥<small>Hisobot</small></button><button id="settings">⚙<small>Sozlamalar</small></button></nav>
+    <div id="toast" role="status"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
